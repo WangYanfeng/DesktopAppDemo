@@ -36,11 +36,11 @@ http://localhost:3000/d3.html
 `npm install -g create-react-app`<br/>
 `npm install -g webpack webpack-cli `<br/>
 `create-react-app desktop-app`<br/>
-`npm install --save electron`<br/>
 `npm init`<br/>
+`npm install --save electron`<br/>
 修改package.json 的入口main.js后： `npm run electron-start`<br/>
 package.json script中添加<code>"electron-start": "electron ."</code><br/>
-
+`npm install mockjs -D`
 
 # Available Scripts
 In the project directory, you can run: <br/>
@@ -49,3 +49,8 @@ In the project directory, you can run: <br/>
 `npm test`: Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.<br/>
 `npm run build`: Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.<br/>
 `npm run eject` **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+
+
+### 难点记录：
+1. React中添加定时器，实现进度条自动更新
