@@ -67,7 +67,7 @@ In the project directory, you can run: <br/>
 `npm run electron-build`
 
 
-### 难点记录：
+### 难点记录
 1. React中添加定时器，实现进度条自动更新
 2. Build APP:
     1) 参考[例子](https://segmentfault.com/a/1190000014030465)
@@ -75,3 +75,7 @@ In the project directory, you can run: <br/>
     4) 在调试时应该loadURL(`http://localhost:3000/xxxxxx`)而在production时则应该webpack打包后，用file://方式来引入html文件 [sample](https://www.jianshu.com/p/c10203ef0c9a)
     5) main.js 放在根目录，所以mainWindow.loadURL('file://' + __dirname + '/build/index.html');必须带上build目录
     6) 必须在build 目录下执行npm run electron-build
+
+### 效果图
+![image]()
+![image]()
