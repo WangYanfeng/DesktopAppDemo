@@ -1,19 +1,6 @@
 import React from 'react';
 import './loginForm.css';
 
-function ErrorMsg(props) {
-    return (
-        <div className="container">
-            {
-                props.errorMsg &&
-                <div className="flash-error">
-                    <span>{props.errorMsg}</span>
-                </div>
-            }
-        </div>
-    )
-}
-
 //受控组件
 //非受控组件 <input type="password" ref={(pwd) => this.password = pwd} name="password" />   ==>    this.password.value
 class LoginForm extends React.Component {

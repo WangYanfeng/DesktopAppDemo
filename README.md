@@ -27,9 +27,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     });</code></pre>
 ### Mockjs
 1. 生成随机数据，拦截 Ajax 请求
-### d3.js
-d3 画树状图
-http://localhost:3000/d3.html
+### ant design
+
 
 
 # Step to create this project
@@ -41,11 +40,15 @@ http://localhost:3000/d3.html
 修改package.json 的入口main.js后： `npm run electron-start`<br/>
 package.json script中添加<code>"electron-start": "electron ."</code><br/>
 `npm install mockjs -D`
+`npm install antd --save`
+`npm install react-router-dom --save`
+`npm install --save react-chartjs`
+
 
 # Available Scripts
 In the project directory, you can run: <br/>
 `npm start`: Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br/>
-`npm run electron-start`: Start electron [Electron doc](https://electronjs.org/docs)<br/>
+`npm run electron-start`: Will call "electron ." Start electron [Electron doc](https://electronjs.org/docs)<br/>
 `npm test`: Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.<br/>
 `npm run build`: Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.<br/>
 `npm run eject` **Note: this is a one-way operation. Once you `eject`, you can’t go back!**

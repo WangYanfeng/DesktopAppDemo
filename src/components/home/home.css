@@ -1,0 +1,15 @@
+.logo {
+    height: 38px;
+    background: url("/image/trend_logo.png") no-repeat;
+    margin: 16px;
+}
+
+.header_span{
+    font-weight: 600;
+}
+
+.header_tool_bar{
+    float: right;
+    padding-right: 50px;
+    cursor: pointer;
+}

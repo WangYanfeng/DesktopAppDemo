@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../components/login/LoginForm';
 import Axios from 'axios';
 
 class LoginPage extends Component {
     constructor(props) {
         super(props);
+        this.handleLoginClick = this.handleLoginClick.bind(this);
     }
 
     // 状态提升
     handleLoginClick(name, password) {
-        console.log(name);
-        console.log(password);
         Axios.post("/login", {
             name: name,
             password: password
@@ -19,12 +18,12 @@ class LoginPage extends Component {
             let resp = res.data;
             console.log(resp);
             if (resp.success) {
-                console.log("login success")
+                console.log("login success, go to /home");
                 this.props.history.push({
                     pathname: '/home',
                 });
             } else {
-                console.log("login fail")
+                console.log("login fail");
             }
         }).catch(res => {
             console.log(res);
