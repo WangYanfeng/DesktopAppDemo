@@ -2,6 +2,7 @@ Electron + React项目实战
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 # 简介
 #### Electron
 1. 标签跳转，函数跳转
@@ -28,7 +29,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Mockjs
 1. 生成随机数据，拦截 Ajax 请求
 ### ant design
+1. 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。[https://ant.design/docs/react/introduce-cn]
 
+
+# How to Run
+1. `npm start`: Call "react-scripts start" to start React
+2. `npm run electron-start`: Call "electron ." to start electron
+
+
+# How to Build
+1. `npm run build`: Call "react-scripts build" script to generate static resource.
+2. `npm run electron-build`: Call "electron-build" script
 
 
 # Step to create this project
@@ -52,7 +63,7 @@ In the project directory, you can run: <br/>
 `npm test`: Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.<br/>
 `npm run build`: Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.<br/>
 `npm run eject` **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
+`npm run electron-build`
 
 
 ### 难点记录：

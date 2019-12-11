@@ -18,7 +18,6 @@ class App extends Component {
                 console.log(resp.data);
                 let data = resp.data;
                 if (data.result === "success") {
-                    console.log("detect ok");
                     this.props.history.push({
                         pathname: '/login',
                     });
