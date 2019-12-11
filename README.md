@@ -29,7 +29,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Mockjs
 1. 生成随机数据，拦截 Ajax 请求
 ### ant design
-1. 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。[https://ant.design/docs/react/introduce-cn]
+1. 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。[Doc](https://ant.design/docs/react/introduce-cn)
 
 
 # How to Run
@@ -39,7 +39,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # How to Build
 1. `npm run build`: Call "react-scripts build" script to generate static resource.
-2. `npm run electron-build`: Call "electron-build" script
+2. 进入build目录运行 `npm run electron-build`: Call "electron-build" script
 
 
 # Step to create this project
@@ -54,6 +54,7 @@ package.json script中添加<code>"electron-start": "electron ."</code><br/>
 `npm install antd --save`
 `npm install react-router-dom --save`
 `npm install --save react-chartjs`
+`npm install electron-packager@13.0.1 --save-dev npm install electron-packager@13.0.1 -g`
 
 
 # Available Scripts
@@ -68,3 +69,9 @@ In the project directory, you can run: <br/>
 
 ### 难点记录：
 1. React中添加定时器，实现进度条自动更新
+2. Build APP:
+    1) 参考[例子](https://segmentfault.com/a/1190000014030465)
+    3) build React后，Open ./build/index.html显示ERR_FILE_NOT_FOUND. 在package.json中添加"homepage": "./"
+    4) 在调试时应该loadURL(`http://localhost:3000/xxxxxx`)而在production时则应该webpack打包后，用file://方式来引入html文件 [sample](https://www.jianshu.com/p/c10203ef0c9a)
+    5) main.js 放在根目录，所以mainWindow.loadURL('file://' + __dirname + '/build/index.html');必须带上build目录
+    6) 必须在build 目录下执行npm run electron-build
