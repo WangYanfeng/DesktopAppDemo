@@ -77,5 +77,5 @@ In the project directory, you can run: <br/>
     6) 必须在build 目录下执行npm run electron-build
 
 ### 效果图
-![image]()
-![image]()
+![image](https://github.com/WangYanfeng/DesktopAppDemo/blob/master/demo_images/Login.png)
+![image](https://github.com/WangYanfeng/DesktopAppDemo/blob/master/demo_images/HomePage.png)
